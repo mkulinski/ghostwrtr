@@ -1,0 +1,22 @@
+<div class="margin-top booyah-box col-xs-10 col-xs-offset-1">
+  <div class="table-responsive text-center">
+    <table class="table table-striped table-bordered table-condensed table-hover">
+        <thead>
+            <tr class="text-center">
+                <th>Musician</th>
+                <th>Song Name</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+          <% @lyrics.each do |lyric| %>
+            <tr>
+              <td>A$AP Rocky</td>
+              <td><%= lyric.title %></td>
+              <td>Hiphop</td>
+            </tr>
+          <% end %>
+        </tbody>
+    </table>
+  </div>
+</div>

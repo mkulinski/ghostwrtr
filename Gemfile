@@ -36,6 +36,8 @@ gem 'rails_12factor', group: :production
 #Bootstrap
 gem 'bootstrap-sass'
 gem 'sprockets'
+#Simple Form
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

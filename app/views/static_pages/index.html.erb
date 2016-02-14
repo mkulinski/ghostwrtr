@@ -4,10 +4,10 @@
       <h1>Buy and Sell original song lyrics</h1>
         <div class="buttons">
           <div class="col-xs-6 text-right">
-            <a href="#" class="btn btn-primary btn-xl">Buy Lyrics</a>
+            <%= link_to 'Buy Lyrics', lyrics_path, class: 'btn btn-primary btn-xl' %>
           </div>
           <div class="col-xs-6 text-left">
-            <a href="#" class="btn btn-primary btn-xl">Sell Lyrics</a>
+            <%= link_to 'Sell Lyrics', new_lyric_path, class: 'btn btn-primary btn-xl' %>
           </div>
         </div>
     </div>

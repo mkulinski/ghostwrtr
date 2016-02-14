@@ -1,0 +1,11 @@
+<div class="margin-top booyah-box col-xs-10 col-xs-offset-1">
+    <div>
+      <h1>Add song lyrics</h1>
+      <hr />
+      <%= simple_form_for @lyric do |f| %>
+        <%= f.input :title %>
+        <br />
+        <%= f.submit 'Add Song', class: 'btn btn-primary btn-xl' %>
+      <% end %>
+    </div>
+</div>
