@@ -1,4 +1,6 @@
 class LyricsController < ApplicationController
+    before_action :authenticate_user!, only: [:new, :create]
+    
     def index
         @lyrics = Lyric.all  
     end
@@ -8,7 +10,7 @@ class LyricsController < ApplicationController
     end
     
     def create
-        Lyric.create(lyric_params)
+        current_user.lyrics.create(lyric_params)
         redirect_to lyrics_path
     end
     
@@ -19,7 +21,7 @@ class LyricsController < ApplicationController
     private
     
     def lyric_params
-       params.require(:lyric).permit(:title)
+       params.require(:lyric).permit(:title, :genre)
     end
     
 end
