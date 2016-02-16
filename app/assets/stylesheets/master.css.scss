@@ -109,4 +109,28 @@ td {
 .genre {
   width: 15%;
 }
-
+.nav-btn {
+    padding: 2px;
+    background: #F05F40;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+    line-height: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.nav-btn:hover, .nav-btn:active, .nav-btn:visited {
+    background: #d85539;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: rgba(255,255,255,.8);
+}
+.fun {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 20%;
+  height: 20%;
+}
