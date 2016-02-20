@@ -13,19 +13,80 @@
     </div>
   </div>
 </section><!-- /.container -->
-<section class="trending">
-  <div class="container">
-    <div class="text-center">
-      <h2>Checkout Who's Trending?!</h2>
-      <p class="lead">List of all of the trending artists.</p>
-    </div>
-  </div>
-</section><!-- /.container -->
-<section class="browse">
-  <div class="container">
-    <div class="text-center">
-      <h2>Top Lyrics</h2>
-      <p class="lead">List of all of the Lyrics in a table. Sorted by most views.</p>
-    </div>
-  </div>
-</section><!-- /.container -->
+
+<%= render 'layouts/genre' %>
+
+   <section class="no-padding bg-dark" id="portfolio">
+        <div class="container featured-artists">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Featured Artists</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-5 col-sm-6 col-md-offset-1">
+                    <a href="#" class="portfolio-box">
+                        <%= link_to image_tag("asap.png"), root_path %>
+                        <div class="portfolio-box-caption">
+                            <!--<div class="portfolio-box-caption-content">-->
+                            <!--    <div class="project-category text-faded">-->
+                            <!--        Hip hop-->
+                            <!--    </div>-->
+                            <!--    <div class="project-name">-->
+                            <!--        ASAP Rocky-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <%= link_to image_tag("khaled.png"), root_path %>
+                        <div class="portfolio-box-caption">
+                            <!--<div class="portfolio-box-caption-content">-->
+                            <!--    <div class="project-category text-faded">-->
+                            <!--        Country-->
+                            <!--    </div>-->
+                            <!--    <div class="project-name">-->
+                            <!--        Khaled-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                    </a>
+                </div>
+               <div class="col-lg-5 col-sm-6 col-md-offset-1">
+                    <a href="#" class="portfolio-box">
+                        <%= link_to image_tag("MG.png"), root_path %>
+                        <div class="portfolio-box-caption">
+                            <!--<div class="portfolio-box-caption-content">-->
+                            <!--    <div class="project-category text-faded">-->
+                            <!--        RnB-->
+                            <!--    </div>-->
+                            <!--    <div class="project-name">-->
+                            <!--        Marvin Gaye-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <%= link_to image_tag("mo.png"), root_path %>
+                        <div class="portfolio-box-caption">
+                            <!--<div class="portfolio-box-caption-content">-->
+                            <!--    <div class="project-category text-faded">-->
+                            <!--        Rock-->
+                            <!--    </div>-->
+                            <!--    <div class="project-name">-->
+                            <!--        ILoveMakonnen-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>

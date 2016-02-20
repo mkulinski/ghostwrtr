@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#index'
   get 'static_pages/about'
+  get 'static_pages/genre'
   resources :lyrics
+  resources :users, only: :show
   
   
  

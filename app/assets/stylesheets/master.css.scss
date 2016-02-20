@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Average);
+
 
 body {
     min-height: 1200px;
     padding-top: 65px;
+    background-color: #FAFAFA;
 }
 .btn a {
   color: rgba(255, 255, 255, 0.8);
@@ -20,7 +24,6 @@ a:hover {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 .brand-text {
-  // color: #b99d6b;
   font-family: 'Dancing Script', cursive;
   font-weight: 600;
   letter-spacing: -0.3px;
@@ -136,4 +139,134 @@ td {
 }
 #lyric_song_lyrics {
   height:300px;
+}
+.card {
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  margin-top: 40px;
+  padding: 0;
+}
+.handle {
+  font-family: 'Fjalla One';
+  font-weight: bold;
+  font-size: 18px;
+}
+.short-line {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Average';
+}
+.long-line {
+  font-family: 'Average';
+}
+.user-image {
+  height:50%;
+  width: 50%;
+  margin: auto 0;
+}
+.service-box {
+    margin: 50px auto 0;
+    max-width: 400px;
+}
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+.service-box p {
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.featured-artists {
+    padding: 100px 0 10px 0;
+}
+.bg-dark {
+    color: #fff;
+    background-color: #222;
+}
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
 }

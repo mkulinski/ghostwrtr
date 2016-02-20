@@ -6,7 +6,10 @@
       <%= simple_form_for @lyric do |f| %>
         <%= f.input :title %>
         <br />
-        <%= f.input :genre %>
+        <div class="form-group">
+          <%= f.label :genre %> 
+          <%= f.select(:genre, options_for_select(['Hiphop', 'Country']), {}, {class: "form-control"}) %>
+        </div>
         <br />
         <%= f.input :song_lyrics, class: 'song_lyrics' %>
         <br />
@@ -15,3 +18,4 @@
     </div>
     </div>
 </div>
+

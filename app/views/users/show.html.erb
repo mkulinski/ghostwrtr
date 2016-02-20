@@ -1,0 +1,21 @@
+<div class="handle card col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 text-center">
+    <div class="col-xs-4">
+        <%= image_tag 'photo.jpg', class: 'image-responsive user-image' %>
+    </div>
+    <div class="col-xs-8">
+        <h1><%= @user.username %> User Profile Page</h1>
+        <h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+        <h4><%= @user.lyrics.count %> total lyrics</h4>
+        <h4>Rating = </h4>
+    </div>
+</div>
+
+<div class="handle card col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 text-center">
+<h1 class="text-center">My Lyrics</h1>
+    <% @user.lyrics.each do |lyric| %>
+        <div class="col-xs-12">
+            <%= lyric.title %>
+            <br />
+        </div>
+    <% end %>
+</div>
