@@ -16,77 +16,41 @@
 
 <%= render 'layouts/genre' %>
 
-   <section class="no-padding bg-dark" id="portfolio">
-        <div class="container featured-artists">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Featured Artists</h2>
-                    <hr class="primary">
+<section class="bg-dark featured-artists">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Featured Artists</h2>
+            <hr class="primary">
+        </div>
+    </div>
+    <div class="container artist-gallery text-center">
+        <div class="row">
+            <div class="first col-xs-6">
+                 <%= link_to image_tag("asap-rocky.jpg", class: 'img-responsive'), root_path %>
+                 <div class="caption">
+                     <h4>A$AP Rocky</h4>
+                 </div>
+            </div>
+            <div class="second col-xs-6">
+                <%= link_to image_tag("cash.jpg", class: 'img-responsive'), root_path %>
+                <div class="caption">
+                    <h4>A$AP Rocky</h4>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-5 col-sm-6 col-md-offset-1">
-                    <a href="#" class="portfolio-box">
-                        <%= link_to image_tag("asap.png"), root_path %>
-                        <div class="portfolio-box-caption">
-                            <!--<div class="portfolio-box-caption-content">-->
-                            <!--    <div class="project-category text-faded">-->
-                            <!--        Hip hop-->
-                            <!--    </div>-->
-                            <!--    <div class="project-name">-->
-                            <!--        ASAP Rocky-->
-                            <!--    </div>-->
-                            <!--</div>-->
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <%= link_to image_tag("khaled.png"), root_path %>
-                        <div class="portfolio-box-caption">
-                            <!--<div class="portfolio-box-caption-content">-->
-                            <!--    <div class="project-category text-faded">-->
-                            <!--        Country-->
-                            <!--    </div>-->
-                            <!--    <div class="project-name">-->
-                            <!--        Khaled-->
-                            <!--    </div>-->
-                            <!--</div>-->
-                        </div>
-                    </a>
-                </div>
-               <div class="col-lg-5 col-sm-6 col-md-offset-1">
-                    <a href="#" class="portfolio-box">
-                        <%= link_to image_tag("MG.png"), root_path %>
-                        <div class="portfolio-box-caption">
-                            <!--<div class="portfolio-box-caption-content">-->
-                            <!--    <div class="project-category text-faded">-->
-                            <!--        RnB-->
-                            <!--    </div>-->
-                            <!--    <div class="project-name">-->
-                            <!--        Marvin Gaye-->
-                            <!--    </div>-->
-                            <!--</div>-->
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <%= link_to image_tag("mo.png"), root_path %>
-                        <div class="portfolio-box-caption">
-                            <!--<div class="portfolio-box-caption-content">-->
-                            <!--    <div class="project-category text-faded">-->
-                            <!--        Rock-->
-                            <!--    </div>-->
-                            <!--    <div class="project-name">-->
-                            <!--        ILoveMakonnen-->
-                            <!--    </div>-->
-                            <!--</div>-->
-                        </div>
-                    </a>
-                </div>
+        <div class="row">
+            <div class="third col-xs-6">
+                <%= link_to image_tag("vince.jpg", class: 'img-responsive'), root_path %>
+                <div class="caption">
+                    <h4>A$AP Rocky</h4>
+                </div>            
+            </div>
+            <div class="fourth col-xs-6">
+                <%= link_to image_tag("weekend.jpg", class: 'img-responsive'), root_path %>
+                <div class="caption">
+                    <h4>A$AP Rocky</h4>
+                </div>            
             </div>
         </div>
-    </section>
+    </div>
+</section>

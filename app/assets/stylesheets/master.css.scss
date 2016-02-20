@@ -265,8 +265,45 @@ hr {
     border-color: #f05f40;
     border-width: 3px;
     display: block;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
     -webkit-margin-start: auto;
     -webkit-margin-end: auto;
+}
+
+.artist-gallery a img {
+  padding: 0;
+  margin: 0;
+}
+.artist-gallery .caption {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(243,156,18,0.6);
+  -webkit-transition: opacity .1s ease-in-out;
+}
+.artist-gallery:hover .caption {
+  opacity: 1;
+}
+.test {
+  height: 800px;
+}
+.first {
+  color: white;
+  background-color: blue;
+}
+.second {
+  color: white;
+  background-color: black;
+}
+.third {
+  color: white;
+  background-color: red;
+}
+.fourth {
+  color: white;
+  background-color: yellow;
 }
