@@ -4,6 +4,7 @@
       <div class="handle"><%= lyric.user.username %></div>
       <div class="short-line"><%= link_to lyric.title, lyric_path(lyric) %></div>
       <div class="long-handle"><%= lyric.genre %></div>
+      <div class="lyric-image"><%= image_tag lyric.image, class: 'img-responsive' %></div>
     </div>
   <% end %>
 </div>
