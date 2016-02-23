@@ -1,10 +1,4 @@
 class LyricsController < ApplicationController
-    
-    # def show
-    #     @genre = Genre.find(params[:id])
-    #     @lyrics = @genre.lyrics
-    # end
-    
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
     
     def index
