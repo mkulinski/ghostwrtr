@@ -54,7 +54,7 @@ class LyricsController < ApplicationController
     end
     
     def lyric_params
-       params.require(:lyric).permit(:title, :genre, :song_lyrics, :image)
+       params.require(:lyric).permit(:title, :genre_id, :song_lyrics, :image)
     end
     
 end

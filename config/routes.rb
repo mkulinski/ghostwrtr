@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   get 'static_pages/genre'
   resources :lyrics
-  resources :genre, only: :show
+  resources :genres, only: :show
   resources :users, only: :show
   
   
