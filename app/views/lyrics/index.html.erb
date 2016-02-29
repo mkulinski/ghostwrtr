@@ -1,15 +1,21 @@
-<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+<div class="lyric col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+  <div class="lyric-heading">
+    <h3>TRENDING LYRICS</h3>
+    <hr />
+  </div>
+  
   <% @lyrics.each do |lyric| %>
     <div class="card">
       <% if current_user && current_user == lyric.user %>
         <%= link_to 'Edit', edit_lyric_path(lyric), class: 'pull-right' %>
       <% end %>
-
+      <%= link_to lyric_path(lyric) do %>
+      <%= image_tag lyric.image, class: 'img-responsive' %>
+      <br />
       <div class="handle"><%= lyric.user.username %></div>
-      <div class="short-line"><%= link_to lyric.title, lyric_path(lyric) %></div>
+      <div class="short-line">"<%= lyric.title %>"</div>
       <div class="long-handle"><%= lyric.genre.name %></div>
-      <div class="lyric-image"><%= image_tag lyric.image, class: 'img-responsive' %></div>
-   
+      <% end %>
     </div>
   <% end %>
 </div>

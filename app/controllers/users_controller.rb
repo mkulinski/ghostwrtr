@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-    
     before_action :find_user
     before_action :verify_is_current_user, except: :profile
     

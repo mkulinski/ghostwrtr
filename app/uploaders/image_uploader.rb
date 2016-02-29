@@ -1,6 +1,9 @@
 # encoding: utf-8
 
 class ImageUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
+
+  process resize_to_fit: [550, 290]
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
