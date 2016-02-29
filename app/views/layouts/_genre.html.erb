@@ -12,19 +12,19 @@
             <div class="row">
                 <div class="col-xs-4 text-center">
                     <div class="service-box">
-                        <%= link_to image_tag("guitar.png"), genre_path(11) %>
+                        <%= link_to image_tag("guitar.png"), genre_path(Genre.find_by_name('Country')) %>
                         <h3>Country</h3>
                     </div>
                 </div>
                 <div class="col-xs-4 text-center">
                     <div class="service-box">
-                        <%= link_to image_tag("audio.png"), genre_path(10) %>
+                        <%= link_to image_tag("audio.png"), genre_path(Genre.find_by_name('Hip hop')) %>
                         <h3>Hip hop</h3>
                     </div>
                 </div>
                 <div class="col-xs-4 text-center">
                     <div class="service-box">
-                        <%= link_to image_tag("handguitar.png"), genre_path(12) %>
+                        <%= link_to image_tag("handguitar.png"), genre_path(Genre.find_by_name('Indie')) %>
                         <h3>Indie</h3>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-xs-4 text-center">
                     <div class="service-box">
-                        <%= link_to image_tag("saxophone.png"), genre_path(13) %>
+                        <%= link_to image_tag("saxophone.png"), genre_path(Genre.find_by_name('Jazz')) %>
                         <h3>Jazz</h3>
                     </div>
                 </div>
@@ -46,13 +46,13 @@
                 </div> -->
                 <div class="col-xs-4 text-center">
                     <div class="service-box">
-                        <%= link_to image_tag("horns.png"), genre_path(14) %>
+                        <%= link_to image_tag("horns.png"), genre_path(Genre.find_by_name('Metal')) %>
                         <h3>Metal</h3>
                     </div>
                 </div>
             <div class="col-xs-4 text-center">
                 <div class="service-box">
-                    <%= link_to image_tag("headphones.png"), genre_path(15) %>
+                    <%= link_to image_tag("headphones.png"), genre_path(Genre.find_by_name('Pop')) %>
                     <h3>Pop</h3>
                 </div>
             </div>
@@ -60,19 +60,19 @@
         <div class="row last-row">
             <div class="col-xs-4 text-center">
                 <div class="service-box">
-                    <%= link_to image_tag("micstand.png"), genre_path(16) %>
+                    <%= link_to image_tag("micstand.png"), genre_path(Genre.find_by_name('RnB')) %>
                     <h3>RnB</h3>
                 </div>
             </div>
             <div class="col-xs-4 text-center">
                 <div class="service-box">
-                    <%= link_to image_tag("drums.png"), genre_path(17) %>
+                    <%= link_to image_tag("drums.png"), genre_path(Genre.find_by_name('Rock')) %>
                     <h3>Rock</h3>
                 </div>
             </div> 
             <div class="col-xs-4 text-center">
                 <div class="service-box">
-                    <%= link_to image_tag("record.png"), genre_path(18) %>
+                    <%= link_to image_tag("record.png"), genre_path(Genre.find_by_name('Other')) %>
                     <h3>Other</h3>
                 </div>
             </div>
