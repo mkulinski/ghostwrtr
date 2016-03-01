@@ -12,7 +12,7 @@
       <%= link_to lyric_path(lyric) do %>
       <%= image_tag lyric.image, class: 'img-responsive' %>
       <br />
-      <div class="handle"><%= lyric.user.username %></div>
+      <div class="handle"><%= lyric.user.username if lyric.user.username? %></div>
       <div class="short-line">"<%= lyric.title %>"</div>
       <div class="long-handle"><%= lyric.genre.name %></div>
       <% end %>
