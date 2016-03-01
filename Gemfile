@@ -44,7 +44,7 @@ gem 'sprockets'
 #Simple Form
 gem 'simple_form'
 #Devise
-gem 'devise', '>= 3.2.4'
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

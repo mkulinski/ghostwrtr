@@ -306,7 +306,7 @@ DEPENDENCIES
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)
-  devise (>= 3.2.4)
+  devise
   figaro
   fog
   font-awesome-sass
