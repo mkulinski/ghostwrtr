@@ -2,15 +2,16 @@
     <br />
     <%= link_to 'Delete', lyric_path(@lyric), method: :delete, data: {confirm: 'Are you sure?' }, class: 'pull-right' %>
     <div class="inner-form col-xs-offset-4">
-    <div>
-      <h1 class="text-center">Edit Lyrics</h1>
-      <hr />
+      <div class="edit-new-lyrics-heading">
+        <h2 class="text-center">Edit Lyric</h2>
+        <hr />
+      </div>
       <%= simple_form_for @lyric do |f| %>
         <%= f.input :title %>
         <br />
         <div class="form-group">
           <%= f.label :genre %> 
-          <%= f.select(:genre, options_for_select(['Hiphop', 'Country']), {}, {class: "form-control"}) %>
+          <%= f.collection_select(:genre_id, Genre.all, :id, :name, {:include_blank => true}, {class: "form-control"}) %>
         </div>
         <br />
         <%= f.input :song_lyrics, class: 'song_lyrics' %>
@@ -19,6 +20,5 @@
         <br />
         <%= f.submit 'Add Song', class: 'btn btn-primary btn-xl' %>
       <% end %>
-    </div>
     </div>
 </div>

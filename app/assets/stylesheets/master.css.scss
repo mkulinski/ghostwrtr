@@ -7,6 +7,14 @@ body {
     min-height: 1200px;
     padding-top: 65px;
     background-color: #FAFAFA;
+    font-family: 'Fjalla One';
+}
+h1, h2, h3 {
+    font-family: 'Average';
+    text-transform: uppercase;
+}
+.gold {
+  color: #b99d6b;
 }
 .btn a {
   color: rgba(255, 255, 255, 0.8);
@@ -47,6 +55,7 @@ a:hover {
 .jumbo-words {
   width: 75%;
   margin: 10% auto;
+  font-weight: bold;
 }
 .jumbo-words h1 {
   font-size: 5em;
@@ -73,7 +82,6 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     line-height: 1em;
     margin: 10px 0;
-    color: rgba(255,255,255,.8);
     border: none;
     transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
 }
@@ -129,6 +137,9 @@ td {
     text-transform: uppercase;
 }
 .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
     color: rgba(255,255,255,.8);
 }
 .fun {
@@ -159,6 +170,9 @@ td {
 .lyric-heading hr {
   padding: 0 0 10px;
   margin: 0 auto;
+}
+.edit-new-lyrics-heading {
+  margin-bottom: 15px;
 }
 .card {
   background-color: #fff;
@@ -205,14 +219,6 @@ td {
 .service-box p {
     margin-bottom: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-}
 .featured-artists {
     padding: 100px 0 10px 0;
 }
@@ -226,7 +232,6 @@ h6 {
     margin: 0 auto;
     max-width: 650px;
 }
-
 .portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
@@ -335,4 +340,17 @@ hr {
 .caption a {
   font-weight: 700;
   color: #F05F40;
+}
+.social {
+    font-size: 28px;
+    margin-top: 1.5em;
+    padding: 0;
+}
+.social li { 
+  display: inline; 
+}
+i { color: #F05F40; }
+i:hover{font-size: 32px;}
+.footer p {
+    color: #333;
 }
