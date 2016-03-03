@@ -10,7 +10,7 @@
         <%= link_to 'Edit', edit_lyric_path(lyric), class: 'pull-right' %>
       <% end %>
       <%= link_to lyric_path(lyric) do %>
-      <%= image_tag lyric.image, class: 'img-responsive' %>
+      <%= image_tag lyric.image, class: 'center-block img-responsive' %>
       <br />
       <div class="handle"><%= lyric.user.username if lyric.user.username? %></div>
       <div class="short-line">"<%= lyric.title %>"</div>

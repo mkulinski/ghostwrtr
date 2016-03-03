@@ -1,8 +1,7 @@
 <div class="margin-top booyah-box col-xs-8 col-xs-offset-2">
-    <div class="inner-form col-xs-offset-4">
-    <div>
-      <h2 class="text-center">Add Lyric</h2>
-      <hr />
+  <h2 class="text-center">Add Lyric</h2>
+  <hr />
+    <div class="inner-form col-xs-offset-3">
       <%= simple_form_for @lyric do |f| %>
         <%= f.input :title %>
         <br />
@@ -11,13 +10,12 @@
           <%= f.collection_select(:genre_id, Genre.all, :id, :name, {:include_blank => true}, {class: "form-control"}) %>
         </div>
         <br />
-        <%= f.input :song_lyrics, class: 'song_lyrics' %>
+        <%= f.input :song_lyrics, placeholder: '*ProTip* if you need more room, drag the botton right corner!', class: 'song_lyrics' %>
         <br />
         <%= f.input :image %>
         <br />
         <%= f.submit 'Add Song', class: 'btn btn-primary btn-xl' %>
       <% end %>
-    </div>
     </div>
 </div> 
 

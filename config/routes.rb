@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'static_pages/genre'
   resources :lyrics
   resources :genres, only: :show
+  resources :charges
 
 
   resources :users, only: :show do
@@ -15,9 +16,10 @@ Rails.application.routes.draw do
   
   namespace :admin do
     get 'dashboard' => 'dashboard#index'
+    get 'users' => 'users#index'
   end
   
-  # url/admin/dashboard
+
   # url/admin/genres
  
   

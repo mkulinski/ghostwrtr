@@ -14,16 +14,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'layouts/navbar' %>
+  <div id="wrap">
+    <%= render 'layouts/navbar' %>
+    
+    <% if notice.present? %>
+      <p class="alert alert-info text-center"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p class="alert alert-danger text-center"><%= alert %></p>
+    <% end %>
+    
+    <%= yield %>
+  </div>
   
-  <% if notice.present? %>
-    <p class="alert alert-info text-center"><%= notice %></p>
-  <% end %>
-  <% if alert.present? %>
-    <p class="alert alert-danger text-center"><%= alert %></p>
-  <% end %>
+  <br class="clr" />
   
-  <%= yield %>
+  <footer id="footer">
+    <ul class="social list-unstyled">
+      <li class="instagram"><a href="https://www.instagram.com/theghostwrtr"><i class="fa fa-instagram"></i></a></li>
+      <li class="twitter"><a href="https://twitter.com/theghostwrtr"><i class="fa fa-twitter"></i></a></li>
+      <li class="facebook"><a href="https://www.facebook.com/theghostwrtr"><i class="fa fa-facebook"></i></a></li>
+    </ul>
+    <p>© 2016 GhostWrtr, Inc. | Made with <i class="fa fa-heart"></i> in Los Angeles, CA</p>
+  </footer>
 
 </body>
 </html>

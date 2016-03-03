@@ -1,25 +1,36 @@
-<div class="booyah-box col-xs-10 col-xs-offset-1">
-  <div class="text-center inner-form col-xs-offset-4">
+<div class="booyah-box col-xs-10 col-xs-offset-1 text-center">
   <h2>Sign up</h2>
+  <hr />
   <br />
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
   <br />
-    <div class="form-inputs">
-      <%= f.input :username, required: true, autofocus: true, placeholder: 'Name', label: false %>
+    <div class="form-inputs col-xs-6 col-xs-offset-4 new-form-inputs">
+      <div class="hello pull-right">Nice to meet you!</div>
+      <div class="input-box pull-left">
+        <%= f.input :username, required: true, autofocus: true, placeholder: 'Name', label: false %>
+      </div>
+      <br class="clr" />
       <br />
-      <%= f.input :email, required: true, placeholder: 'Email', label: false %>
+      <div class="name pull-right"> You'll use this to log in.</div>
+      <div class="input-box pull-left">
+        <%= f.input :email, required: true, placeholder: 'Email', label: false %>
+      </div>
+      <br class="clr" />
       <br />
-      <%= f.input :password, required: true, placeholder: 'Password', label: false %>
-      <br />
-      <%= f.input :password_confirmation, required: true, placeholder: 'Re-Enter Password', label: false %>
+      <div class="input-box pull-left">
+        <%= f.input :password, required: true, placeholder: 'Password', label: false %>
+      </div>
     </div>
+  <br class="clr" />
   <br />
-    <div class="form-actions">
+    <div class="form-actions new-user-form">
       <%= f.button :submit, "Sign up", :class => 'btn btn-primary' %>
-      <button class="btn btn-primary"><%= render "devise/shared/links" %></button>
+    </div>
+    <div class="form-actions new-user-login">
+      Already a member? - 
+      <%= render "devise/shared/links" %>
     </div>
   <% end %>
   <br />
-</div>
 </div>
