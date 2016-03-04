@@ -436,9 +436,24 @@ i:hover{font-size: 32px;}
   background-color: #428bca;
 }
 
-
+#customButton {
+  padding: 20px;
+  background: #F05F40;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
+#customButton:hover, #customButton:active, #customButton:visited {
+    background: #d85539;
+    font-size: 18px;
+}
 /*
- * Main content
+ * Admin Main content
  */
 
 .main {
