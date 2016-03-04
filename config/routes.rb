@@ -17,12 +17,8 @@ Rails.application.routes.draw do
   namespace :admin do
     get 'dashboard' => 'dashboard#index'
     get 'users' => 'users#index'
+    get 'lyrics' => 'lyrics#index'
   end
-  
-
-  # url/admin/genres
- 
-  
   
   
   

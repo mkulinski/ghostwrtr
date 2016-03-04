@@ -23,40 +23,30 @@
             </div>
           </div>
 
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">All Lyrics</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>Title</th>
+                  <th>User id</th>
+                  <th>Created At</th>
+                  <th>Image</th>
+                  <th>Edit</th>
                 </tr>
               </thead>
               <tbody>
+                  <% @lyrics.each do |lyric| %>
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
+                
+                  <td><%= lyric.title %></td>
+                  <td><%= lyric.user_id %></td>
+                  <td><%= lyric.created_at %></td>
+                  <td><%= lyric.image %></td>
+                  <td><%= link_to 'Edit Lyric', edit_lyric_path(lyric) %></td>
+        
                 </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
+                <% end %>
               </tbody>
             </table>
           </div>

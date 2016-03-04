@@ -1,19 +1,57 @@
-<div class="lyric col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    <h1>admin/Users index page</h1>
-
-    <% @users.each do |user| %>
-        <div class="card">
-            <%= link_to 'Edit User Registration', edit_user_registration_path(user), class: 'pull-right' %>
-          <%= link_to user_path(user) do %>
-          <%= image_tag user.image, class: 'img-responsive' %>
-          <br />
-          <div class="handle"><%= user.username %></div>
-          <div class="short-line">"<%= user.email %>"</div>
-          <div class="long-handle">Sign in count = <%= user.sign_in_count %></div>
-          <div class="long-handle">User created at = <%= user.created_at %></div>
-          <div class="long-handle">User last sign in at = <%= user.last_sign_in_at %></div>
-          <% end %>
-          <br class="clr" />
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
         </div>
-    <% end %>
-</div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-6 placeholder">
+              <h4>Users</h4>
+              <span class="text-muted"><%= link_to 'Users Index', admin_users_path %></span>
+            </div>
+            <div class="col-xs-6 col-sm-6 placeholder">
+              
+              <h4>Lyrics</h4>
+              <span class="text-muted"><%= link_to 'Lyrics Index', admin_lyrics_path %></span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">All Users</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Sign In Count</th>
+                  <th>Created</th>
+                  <th>Last Sign In</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <% @users.each do |user| %>
+                <tr>
+                
+                  <td><%= user.username %></td>
+                  <td><%= user.email %></td>
+                  <td><%= user.sign_in_count %></td>
+                  <td><%= user.created_at %></td>
+                  <td><%= user.last_sign_in_at %></td>
+                  <td><%= link_to 'Edit User Registration', edit_user_registration_path(user) %></td>
+                
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
