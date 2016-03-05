@@ -42,7 +42,7 @@
             <div class="third col-xs-6">
                 <%= link_to image_tag("vince.jpg", class: 'img-responsive pull-right'), profile_user_path(User.find_by_email('v@v.com')) %>
                 <div class="caption cap-three">
-                    <h4><%= link_to 'Vince Staples', root_path %></h4>
+                    <h4><%= link_to 'Vince Staples', profile_user_path(User.find_by_email('v@v.com')) %></h4>
                 </div>            
             </div>
             <div class="fourth col-xs-6">
