@@ -26,29 +26,29 @@
     <div class="container artist-gallery text-center">
         <div class="row">
             <div class="first col-xs-6">
-                 <%= link_to image_tag("asap-rocky.jpg", class: 'img-responsive pull-right'), root_path %>
+                 <%= link_to image_tag("asap-rocky.jpg", class: 'img-responsive pull-right'), profile_user_path(User.find_by_email('a@a.com')) %>
                  <div class="caption cap-one">
-                     <h4><%= link_to 'A$AP Rocky', root_path %></h4>
+                     <h4><%= link_to 'A$AP Rocky', profile_user_path(User.find_by_email('a@a.com')) %></h4>
                  </div>
             </div>
             <div class="second col-xs-6">
-                <%= link_to image_tag("cash.jpg", class: 'img-responsive'), root_path %>
+                <%= link_to image_tag("cash.jpg", class: 'img-responsive'), profile_user_path(User.find_by_email('j@j.com')) %>
                 <div class="caption cap-two">
-                    <h4><%= link_to 'Johnny Cash', user_path(4)  %></h4>
+                    <h4><%= link_to 'Johnny Cash', profile_user_path(User.find_by_email('j@j.com')) %></h4>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="third col-xs-6">
-                <%= link_to image_tag("vince.jpg", class: 'img-responsive pull-right'), root_path %>
+                <%= link_to image_tag("vince.jpg", class: 'img-responsive pull-right'), profile_user_path(User.find_by_email('v@v.com')) %>
                 <div class="caption cap-three">
-                    <h4><%= link_to 'Vince Staples', root_path %></h4>
+                    <h4><%= link_to 'Vince Staples', profile_user_path(User.find_by_email('v@v.com')) %></h4>
                 </div>            
             </div>
             <div class="fourth col-xs-6">
-                <%= link_to image_tag("weekend.jpg", class: 'img-responsive'), root_path %>
+                <%= link_to image_tag("weekend.jpg", class: 'img-responsive'), profile_user_path(User.find_by_email('w@w.com')) %>
                 <div class="caption cap-four">
-                    <h4><%= link_to 'The Weekend', root_path %></h4>
+                    <h4><%= link_to 'The Weekend', profile_user_path(User.find_by_email('w@w.com')) %></h4>
                 </div>            
             </div>
         </div>
