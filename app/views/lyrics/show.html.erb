@@ -8,7 +8,7 @@
         <br />
         <p><%= simple_format(@lyric.song_lyrics) %></p>
     </div>
-    <button id="customButton">Purchase</button>
+    <button id="customButton">$<%= @lyric.price %> Purchase</button>
 
 
 <!--<script src="https://checkout.stripe.com/checkout.js"></script>-->

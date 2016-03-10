@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'static_pages/genre'
   resources :lyrics
   resources :genres, only: :show
-  resources :charges
+  resources :carts, only: [:show, :destroy, :new, :create]
 
 
   resources :users, only: :show do
