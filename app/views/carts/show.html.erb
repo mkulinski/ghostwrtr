@@ -1,2 +1,10 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
+<% if @cart.cart_items.size == 0 %>
+  <p class="text-center">
+    There are no items in your shopping cart.  Please <%= link_to "go back", root_path %> and add some items to your cart.
+  </p>
+<% else %>
+  <% @cart.cart_items.each do |cart_item| %>
+    <!--re-add the line that goes here-->
+    <%= cart_item.inspect %><br/>
+  <% end %>
+<% end %>

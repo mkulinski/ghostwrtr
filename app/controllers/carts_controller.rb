@@ -1,13 +1,15 @@
 class CartsController < ApplicationController
-  before_action :authenticate_user!
-
+  
   def show
+    @cart = current_cart
   end
   
   def new
+
   end
   
   def create
+
   end
   
   def destroy

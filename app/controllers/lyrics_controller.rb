@@ -2,7 +2,7 @@ class LyricsController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
     
     def index
-        @lyrics = Lyric.all  
+        @lyrics = Lyric.all
     end
     
     def new
@@ -17,6 +17,7 @@ class LyricsController < ApplicationController
     def show
         @lyric = Lyric.find(params[:id])
         return render_not_found if @lyric.blank?
+        @cart_item = current_cart.cart_items.new
     end
     
     def edit

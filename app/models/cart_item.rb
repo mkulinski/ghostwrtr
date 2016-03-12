@@ -1,4 +1,4 @@
 class CartItem < ActiveRecord::Base
-    belongs_to :carts
-    belongs_to :lyrics
+    belongs_to :cart
+    belongs_to :lyric
 end

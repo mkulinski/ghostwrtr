@@ -9,6 +9,20 @@
         <p><%= simple_format(@lyric.song_lyrics) %></p>
     </div>
     <button id="customButton">$<%= @lyric.price %> Purchase</button>
+    <div class="col-xs-4">
+      
+      <%= form_for @cart_item do |f| %>
+      <h4 class="text-right">Price: <span style="color: green"><%= number_to_currency @lyric.price %></span></h4>
+        <div class="input-group">
+          <%= f.hidden_field :quantity, value: 1, class: "form-control", min: 1 %>
+          <div class="input-group-btn">
+            <%= f.hidden_field :lyric_id, value: @lyric.id %>
+            <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= link_to "#{current_cart.cart_items.size}", cart_path, class: "btn btn-link" %>
 
 
 <!--<script src="https://checkout.stripe.com/checkout.js"></script>-->
