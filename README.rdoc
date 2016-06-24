@@ -1,5 +1,7 @@
 == Ghostwrtr
 
-An application that allows musicians to buy and sell origin song lyrics.
+This is my personal passion project. I'm a huge music fan and would like to help musicians make better music.
+
+Ghostwrtr is an application that allows musicians to buy and sell origin song lyrics.
 
 Think Etsy, for song lyrics.
